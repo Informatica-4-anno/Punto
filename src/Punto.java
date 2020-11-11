@@ -17,17 +17,12 @@ public class Punto {
 	}
 	
 	public double distance( Punto p1) {
-		
-//		System.out.println("Io: "+this);
-//		System.out.println("Parametro: "+p1);
-//	
-
-		return 0;
+        return(Math.sqrt(Math.pow((this.x -p1.getX()),2)+Math.pow((this.y-p1.getY()),2)));    
 	}
 
 	@Override
 	public String toString() {
-		return "(" + x + "," + y + ")";
+		return "Il punto è (" + x + "," + y + ")";
 	}
 	
 }
